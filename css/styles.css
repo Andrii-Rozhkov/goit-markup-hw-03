@@ -59,6 +59,9 @@ button {
 }
 
 .text-title {
+    margin: 0;
+    margin-bottom: ;
+    width: 264px;
     color: #2E2F42;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
@@ -68,6 +71,7 @@ button {
 }
 
 .body-text {
+    margin: 0;
     color: #434455;
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
@@ -172,13 +176,11 @@ a[href="#studio"]:active {
     background-color: #2E2F42;
 }
 
-.hero-container {
-    padding-top: 188px;
-    padding-bottom: 188px;
+.hero {
+    padding: 188px 0;
 }
 
 .hero-title {
-
     padding-bottom: 48px;
     max-width: 496px;
     margin-right: auto;
@@ -213,6 +215,12 @@ a[href="#studio"]:active {
 .hero-btn:hover,
 .hero-btn:focus {
     background-color: #404BBF;
+}
+
+.features-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
 }
 
 .team-section {
