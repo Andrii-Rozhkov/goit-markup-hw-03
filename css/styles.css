@@ -60,14 +60,13 @@ button {
 
 .text-title {
     margin: 0;
-    margin-bottom: ;
-    width: 264px;
     color: #2E2F42;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .body-text {
@@ -225,6 +224,10 @@ a[href="#studio"]:active {
     display: flex;
     justify-content: center;
     gap: 24px;
+}
+
+.features-card {
+    width: calc((100% - 3 * 24px) / 4);
 }
 
 .team-section {
