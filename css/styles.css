@@ -1,12 +1,50 @@
+/* *,
+*::before,
+*::after {
+    box-sizing: border-box;
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
 body {
     color: #434455;
     font-family: 'Roboto', sans-serif;
     background-color: #FFFFFF;
 }
 
+ol,
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 a {
     color: currentColor;
     text-decoration: none;
+}
+
+button {
+    font-family: inherit;
+    color: currentColor;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-title {
@@ -48,12 +86,8 @@ a {
     letter-spacing: 0.02em;
 }
 
-ol,
-ul {
-    list-style-type: none
-}
-
-.logo {
+.header-logo,
+.footer-logo {
     color: #4D5AE5;
     font-size: 18px;
     font-family: "Raleway", sans-serif;
@@ -61,6 +95,12 @@ ul {
     text-transform: uppercase;
     line-height: 1.17;
     letter-spacing: 0.03em;
+}
+
+.header-logo {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 76px;
 }
 
 .header-logo-accent {
@@ -72,6 +112,9 @@ ul {
 }
 
 .header-link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
     color: #2E2F42;
     font-family: "Roboto";
     font-weight: 500;
@@ -80,10 +123,17 @@ ul {
 }
 
 .header-address {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
     font-style: normal;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
+
+/* .container address {
+    margin-left: 40px;
+} */
 
 .header-link:hover,
 .header-link:focus {
@@ -95,9 +145,33 @@ a[href="#studio"]:active {
     letter-spacing: 0.02em;
 }
 
+.header-contact {
+    display: inline-flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
 .header-contact:hover,
 .header-contact:focus {
     color: #404BBF;
+}
+
+.header-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header-nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-right: 40px;
 }
 
 .hero {
@@ -120,12 +194,13 @@ a[href="#studio"]:active {
     background-color: #404BBF;
 }
 
-.team {
+.team-section {
     background-color: #F4F4FD;
 }
 
 .team-card {
     background-color: #FFFFFF;
+    width: calc((100%-24px*3)/4);
 }
 
 
@@ -143,8 +218,4 @@ a[href="#studio"]:active {
 
 .portfolio-card {
     background-color: #E7E9FC;
-}
-
-.team-card {
-    background-color: #FFFFFF;
 }
