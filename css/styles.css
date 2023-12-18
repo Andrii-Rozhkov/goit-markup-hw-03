@@ -217,6 +217,10 @@ a[href="#studio"]:active {
     background-color: #404BBF;
 }
 
+.features-section {
+    padding: 120px 0;
+}
+
 .features-list {
     display: flex;
     justify-content: center;
