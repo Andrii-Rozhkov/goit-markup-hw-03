@@ -48,6 +48,7 @@ button {
 }
 
 .section-title {
+    margin-bottom: 72px;
     color: #2E2F42;
     font-size: 36px;
     text-align: center;
@@ -60,17 +61,19 @@ button {
 
 .text-title {
     margin: 0;
+    margin-bottom: 8px;
+    text-align: center;
     color: #2E2F42;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    margin-bottom: 8px;
 }
 
 .body-text {
     margin: 0;
+    text-align: center;
     color: #434455;
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
@@ -216,6 +219,20 @@ a[href="#studio"]:active {
     background-color: #404BBF;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .features-section {
     padding: 120px 0;
 }
@@ -231,14 +248,24 @@ a[href="#studio"]:active {
 }
 
 .team-section {
+    padding-top: 120px;
     background-color: #F4F4FD;
 }
 
 .team-card {
+    width: calc((100%-72px)/4);
     background-color: #FFFFFF;
-    width: calc((100%-24px*3)/4);
+    border-radius: 0 0 4px 4px;
 }
 
+.team-list {
+    display: flex;
+    gap: 24px;
+}
+
+.team-name {
+    padding: 32px 0;
+}
 
 .footer {
     color: #F4F4FD;
