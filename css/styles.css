@@ -260,11 +260,33 @@ a[href="#studio"]:active {
 
 .team-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 24px;
 }
 
 .team-name {
     padding: 32px 0;
+}
+
+.portfolio-section {
+    padding: 120px 0 120px 0;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.portfolio-card {
+    width: calc((100%-48px)/3);
+}
+
+.portfolio-name {
+    padding: 32px 16px;
+    border: 1px solid #E7E9FC;
+    border-top: none;
 }
 
 .footer {
